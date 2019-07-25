@@ -33,9 +33,12 @@ public class DemoApplication  {
 
             String[] beanNames = ctx.getBeanDefinitionNames();
             Arrays.sort(beanNames);
+            int count = 0;
             for (String beanName : beanNames) {
-                System.out.println(beanName+"hi");
+                count++;
+                System.out.println(beanName);
             }
+            System.out.println("total beans are "+count);
 
         };
     }
